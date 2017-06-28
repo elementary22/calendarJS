@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CalendarJS</title>
+    <base href="/">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body ng-app="app">
+
+   <ng-view></ng-view>
+
+</body>
+
+    <!--Libs-->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="node_modules/moment/min/moment.min.js"></script>
+    <script src="https://use.fontawesome.com/63a4a301cb.js"></script>
+
+
+    <!--App-->
+    <script src="app/app.module.js"></script>
+    <script src="app/app.config.js"></script>
+    
+
+    <!--Components-->
+    <script src="app/components/calendar/calendar.module.js"></script>
+    <script src="app/components/calendar/calendar.component.js"></script>
+
+    <!--Factories-->
+    <script src="app/factories/monthRender.factory.js"></script>
+
+</html>

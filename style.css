@@ -1,0 +1,85 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #031b33;
+}
+#calendar{
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  width: 280px;
+  box-sizing: border-box;
+}
+
+#calendar .header{
+  display: flex;
+  justify-content: center;
+  padding: 50px 80px 30px;
+  background-color: #4ecdc4;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+}
+#calendar .left, .right{
+  position: absolute;
+  top: 73px;
+  font-size:28px;
+  color: #133331;
+  cursor: pointer;
+}
+#calendar .left{
+  left: 20px;
+}
+#calendar .right{
+  right: 20px;
+}
+#calendar h1,p{
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+#calendar h1{
+  font-size: 30px;
+}
+#calendar p{
+  font-size: 16px;
+  margin-top: -16px;
+}
+ #calendar td, th{
+  text-align: center;
+  padding: 5px;
+}
+ #calendar table{
+  width: 100%;
+  padding: 30px 20px;
+  background-color: #f5f5f5;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+ #calendar th{
+  color: #e66b6b;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+#calendar td{
+  font-size: 14px;
+  color: #555;
+}
+#calendar td:hover{
+  color: #4ecdc4;
+  cursor: pointer;
+}
+#calendar .today{
+ color: #e66b6b;
+}
+#calendar .another-month{
+ color: #bababa;
+}
